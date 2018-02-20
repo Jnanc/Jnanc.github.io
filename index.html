@@ -167,66 +167,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>——<em>呼~，终于可以安心的吐口气了，今天对我来说真可谓是一个历史性的时刻：成功的使用<br>hexo+github连滚带爬的搭建好了属于自己的个人博客，好了废话不多说，我把完整的步骤<br>分享给大家，供大家参考一下，提个醒，这个有些费时间，期间还可能遇到一些各种各样的　　<br>问题，需要解决，望大家做好心理准备。</em>  </p>
-<h2 id="一、第一步：下载安装Git"><a href="#一、第一步：下载安装Git" class="headerlink" title="一、第一步：下载安装Git"></a>一、第一步：下载安装Git</h2><p>1、<a href="https://gitforwindows.org/" target="_blank" rel="external">Git 下载</a><br>2、Git 安装</p>
-<ul>
-<li>安装步骤（全部回车默认）</li>
-</ul>
-<p>　　<img src="https://t1.picb.cc/uploads/2018/02/19/Eh5P6.png" alt="Next"></p>
-<p>　　<img src="https://t1.picb.cc/uploads/2018/02/19/EhAVT.png" alt="Next">  </p>
-<h2 id="二、第二步：下载安装node-js"><a href="#二、第二步：下载安装node-js" class="headerlink" title="二、第二步：下载安装node.js"></a>二、第二步：下载安装node.js</h2><p>1、<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js 下载</a><br>　　<img src="https://t1.picb.cc/uploads/2018/02/19/EhMGM.png" alt="两个版本"><br>2、node.js 安装</p>
-<ul>
-<li>安装步骤（同上，全部回车默认）</li>
-</ul>
-<p>　　<img src="https://t1.picb.cc/uploads/2018/02/19/EhOpt.png" alt="全部Next"></p>
-<h2 id="三、验证软件是否正确安装"><a href="#三、验证软件是否正确安装" class="headerlink" title="三、验证软件是否正确安装"></a>三、验证软件是否正确安装</h2><ul>
-<li>同时按下Win键和R键（或者点击“开始菜单”-&gt;点击“运行”）,打开运行窗口,输入“cmd”<br>然后输入以下命令，结果与下图相同则说明安装正确，若不正确可以卸载软件重新安装</li>
-</ul>
+        <pre><code>本文章为原创内容，转载请注明出处
+</code></pre><p>　　<em>呼~，终于可以安心的吐口气了，今天对我来说真可谓是一个历史性的时刻：成功的使用<br>hexo+github连滚带爬的搭建好了属于自己的个人博客（其实自己就搭建好了只是被自己捣鼓坏了）<br>好了废话不多说，我把完整的步骤分享给大家，供大家参考一下，提个醒，这个有些费时间，期间<br>还可能遇到一些各种各样的　　<br>问题，需要解决，望大家做好心理准备。</em>  </p>
 <blockquote>
-<ol>
-<li>git –version</li>
-<li>node -v</li>
-<li>npm -v</li>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><h4 id="使用github-pages服务搭建博客的特点："><a href="#使用github-pages服务搭建博客的特点：" class="headerlink" title="使用github pages服务搭建博客的特点："></a>使用github pages服务搭建博客的特点：</h4><ol>
+<li>全是静态文件，访问速度快；</li>
+<li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li>
+<li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li>
 </ol>
-</blockquote>
-<p>　　<img src="https://t1.picb.cc/uploads/2018/02/19/EvZot.png" alt=""></p>
-<h2 id="四、申请GitHub"><a href="#四、申请GitHub" class="headerlink" title="四、申请GitHub"></a>四、申请GitHub</h2><ul>
-<li><p>点击-&gt;<a href="https://github.com/" target="_blank" rel="external">GitHub</a>进入官网注册帐号</p>
-</li>
-<li><p>按下图分别输入用户名、邮箱、密码，然后点击注册</p>
-</li>
-</ul>
-<p>　　<img src="https://t1.picb.cc/uploads/2018/02/20/E3unK.png" alt=""></p>
-<ul>
-<li>按默认点击“Finish sign up”</li>
-</ul>
-<p>　　<img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701018.png" alt=""></p>
-<ul>
-<li>点击”New repository”，新建一个版本库</li>
-</ul>
-<p>　　<img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701019.png" alt=""></p>
-<ul>
-<li>输入Repository name项:填写yourname.github.io(yourname为你的用户名,这个就是你博客的域名了)</li>
-</ul>
-<p>　　<img src="https://t1.picb.cc/uploads/2018/02/20/E3r2T.png" alt=""></p>
-<ul>
-<li>到此github帐号申请完成</li>
-</ul>
-<p>　　<img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701021.png" alt=""> </p>
-<ul>
-<li>启用GitHub Page</li>
-</ul>
-<p>　点击右边的“Setting”菜单进入设置,点击”Launch automatic page generator”</p>
-<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701021-1.png" alt=""></p>
-<p>点击底部的”Continue to layouts”</p>
-<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701021-2.png" alt=""></p>
-<ul>
-<li>最后点击”Publish page”<br>　发布github默认生成的一个静态站点</li>
-</ul>
-<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701021-3.png" alt=""></p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>hexo是基于node.js的静态博客，官网也是搭建在GitHub上<br>在电脑上新建一个blog文件夹,该文件夹用于存放你的博客文件,然后右键单击选择“Git Bash”</p>
-<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701022.png" alt=""></p>
-
+        
+          <a class="article-more-a" href="/2018/02/19/GitHub搭建个人博客/#more">more >></a>
+        
       
 
       
@@ -239,7 +190,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">笔记 技术</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记 技术 hexo GitHub</a>
         		</li>
       		
 		</ul>
@@ -475,6 +426,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">起始</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记 技术 hexo GitHub</a>
               </li>
             
             <div class="clearfix"></div>
